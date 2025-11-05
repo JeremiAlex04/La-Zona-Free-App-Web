@@ -1,0 +1,15 @@
+package com.example.biblioteca.dto;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+
+@Data
+public class LoginRequest {
+    @NotBlank(message = "El email es requerido")
+    @Email(message = "Email inválido")
+    private String email;
+    
+    @NotBlank(message = "La contraseña es requerida")
+    private String password;
+}

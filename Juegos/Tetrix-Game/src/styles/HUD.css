@@ -1,0 +1,104 @@
+.hud {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-box {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h3 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #4ecdc4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-box .value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info-box .sub-value {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 5px;
+}
+
+.level-progress {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.level-progress h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4ecdc4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.level-indicator {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.level-indicator.active {
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  box-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.level-indicator.current {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(78, 205, 196, 0.8);
+}
+
+.game-tips {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.game-tips h4 {
+  color: #4ecdc4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.game-tips p {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
